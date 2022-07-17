@@ -2,18 +2,18 @@
 #include <stdbool.h>
 #include "sort.h"
 
-int partition_1(int arr[], int low, int high) {
-    int pivot = arr[high];
-    int i = low;
-    for (int j = low; j <= high - 1; j++) {
-        if (arr[j] < pivot) {
-            swap(&arr[i], &arr[j]);
-            i++;
-        }
-    }
-    swap(&arr[i], &arr[high]);
-    return i;
-}
+// int partition(int arr[], int low, int high) {
+//     int pivot = arr[high];
+//     int i = low;
+//     for (int j = low; j <= high - 1; j++) {
+//         if (arr[j] < pivot) {
+//             swap(&arr[i], &arr[j]);
+//             i++;
+//         }
+//     }
+//     swap(&arr[i], &arr[high]);
+//     return i;
+// }
 
 int partition(int arr[], int low, int high) {
     int pivot = arr[low];
