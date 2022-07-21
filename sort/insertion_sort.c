@@ -28,7 +28,8 @@ void sort(int arr[], int arr_size) {
     for (int i = 1; i < arr_size; i++) {
         int j = i;
 
-        // Move elements of arr[0...i-1] that are greater than the key one position ahead
+        // Keep swapping the jth element with the element below
+        // Until it is in the correct position of sorted partition
         while (j > 0 && arr[j] < arr[j - 1]) {
             swap(&arr[j], &arr[j - 1]);
             j--;
