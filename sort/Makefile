@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Werror
+CFLAGS = -Wall -Werror -ggdb
 DEPS = sort.h 
 TARGETS = bubble_sort insertion_sort selection_sort quick_sort merge_sort random_quick_sort
 
